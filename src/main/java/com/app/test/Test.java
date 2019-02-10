@@ -15,9 +15,9 @@ public class Test {
 		IEmployeeService service=(IEmployeeService) 
 				ac.getBean("employeeServiceImpl");
 		Employee emp=new Employee();
-		emp.setEmpId(550);
-		emp.setEmpName("Pallav");
-		emp.setEmpSal(568.36);
+		emp.setEmpId(507);
+		emp.setEmpName("Sudheer");
+		emp.setEmpSal(650.60);
 		service.saveEmployee(emp);
 		List<Employee> emps=service.getAllEmployees();
 		emps.forEach(System.out::println);
